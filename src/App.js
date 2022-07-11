@@ -3,67 +3,71 @@ import './App.css';
 
 function App() {
 
-  // let x = 10;
+  // =========== is Array =========== //
 
-  // x = x + 5;
+    // let arr=[10,20,30,40,50];
 
-  // console.log(x); // 15
-
-
-    // const x = 10;
-
-    // x = x + 5;
-
-    // console.log(x); //error
+    // console.log(Array.isArray(arr)); //True
 
 
+    // ================= concat ========== //
 
-    // let x;
+    // let arr = [10,20,30,40,50,60];
+    // let arr1 = [70,80,90];
+    // let arr2 = [100];
+    
+    // let ans = arr.concat(arr1,arr2);
 
-    // x = 5;
-
-    // console.log(x); //5
-
-      // const x;
-
-      // x = 5;
-
-      // console.log(x); //error
+    // console.log(ans);
 
 
-        // block scope
+    // =================== some =========== //
+    
+    // let arr = [10,20,30];
 
-      // let x = 5;  // global scope
+    // let ans = arr.some((a) => a >15)
 
-      // {
-      //   let x = 10; // local scope
-      // }
-      // console.log(x); // 5
+    // console.log(ans);// True
 
-      // ======== Arrow function ========== //
+    // ================= to string ============= //
 
-      // const display = (name,id) => {
-      //   console.log(name,id);
-      // }
+      // let arr = [10,20,30]
+    
+      // console.log(arr.toString(arr)); // 10,20,30
 
-      // display("prince",6417,);
+      // ================= find ============== //
 
+      // let arr = [40,50,60];
 
-      // ============ ARRAY ================ //
+      // let ans = arr.find((a) => a >55)
 
-      // let grid = [12,18,26,48,90];
+      // console.log(ans); // 60
 
-      // console.log(grid[3],grid);
+      // ============== splice =================== //
 
 
-      // ======== is array ========== //
+      // let arr = [1,2,4,5,6];
 
-      // let arr = [12,18,67,89,48];
+      // arr.splice(2,0,3);
 
-      //   let ans = Array.isArray(arr)
+      // console.log(arr); // add 3 at 2nd index //[1, 2, 3, 4, 5, 6]
 
-      // console.log(ans); // true
 
+      // let arr = [1,2,3,4,5,6,9,7,8,9,0];
+
+      // arr.splice(6,1);
+
+      // console.log(arr); // delete 9 at 6th index //[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+
+      //============= Object ===============//
+
+      // let obj = {
+      //   id : 101 ,
+      //   Name : 'prince'
+      // };
+
+      // console.log(obj.id,obj['Name']);
 
 
   return (

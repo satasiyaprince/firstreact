@@ -36,7 +36,7 @@ function App() {
       // console.log(obj1); // {id: 101, name: 'prince'}
 
 
-      // //marging 
+      // //marging  
 
       // let obj2 = {id: 102,  place: 'surat'}
 

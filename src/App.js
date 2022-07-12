@@ -2,72 +2,57 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+// ====================== Array ============================ //
 
-  // =========== is Array =========== //
+  // let arr = [10,20,30,40,50]
 
-    // let arr=[10,20,30,40,50];
+  //   //copy array
 
-    // console.log(Array.isArray(arr)); //True
+  //   let arr1 = [...arr]
 
+  //   console.log(arr1); // [10, 20, 30, 40, 50]
 
-    // ================= concat ========== //
+  //   //marging
 
-    // let arr = [10,20,30,40,50,60];
-    // let arr1 = [70,80,90];
-    // let arr2 = [100];
-    
-    // let ans = arr.concat(arr1,arr2);
+  //   let arr2 = [60,70,80,90,100]
+  //   let ans = [...arr,...arr2]
+  //   console.log(ans); // [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-    // console.log(ans);
+  //   //destructuring
 
-
-    // =================== some =========== //
-    
-    // let arr = [10,20,30];
-
-    // let ans = arr.some((a) => a >15)
-
-    // console.log(ans);// True
-
-    // ================= to string ============= //
-
-      // let arr = [10,20,30]
-    
-      // console.log(arr.toString(arr)); // 10,20,30
-
-      // ================= find ============== //
-
-      // let arr = [40,50,60];
-
-      // let ans = arr.find((a) => a >55)
-
-      // console.log(ans); // 60
-
-      // ============== splice =================== //
+  //   const [a,b,c,d,e,f] = arr;
+  //   console.log(d,a,b,c ); // 40 10 20 30
 
 
-      // let arr = [1,2,4,5,6];
-
-      // arr.splice(2,0,3);
-
-      // console.log(arr); // add 3 at 2nd index //[1, 2, 3, 4, 5, 6]
+    // ==================== Object ======================= //
 
 
-      // let arr = [1,2,3,4,5,6,9,7,8,9,0];
+      // let obj = {id: 101, name : 'prince'}
 
-      // arr.splice(6,1);
+      // // copy object
 
-      // console.log(arr); // delete 9 at 6th index //[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+      // let obj1 = {...obj}
+
+      // console.log(obj1); // {id: 101, name: 'prince'}
 
 
-      //============= Object ===============//
+      // //marging 
 
-      // let obj = {
-      //   id : 101 ,
-      //   Name : 'prince'
-      // };
+      // let obj2 = {id: 102,  place: 'surat'}
 
-      // console.log(obj.id,obj['Name']);
+      // let ans = {...obj,...obj2}
+      // console.log(ans); // {id: 102, name: 'prince', place: 'surat'}
+
+      // //destructuring
+
+      // let {id} = obj;
+
+      // console.log(id,obj.name); // 101 'prince'
+
+
+
+
+
 
 
   return (

@@ -2,76 +2,70 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-// ====================== Array ============================ //
 
-  // let arr = [10,20,30,40,50]
+let Data = [
+    {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
+    }
+  ];
 
-  //   //copy array
+    
+  let fdata = Data.filter((v,i) => v.expiry >= 2022 && v.status === true);
+  console.log(fdata);
 
-  //   let arr1 = [...arr]
-
-  //   console.log(arr1); // [10, 20, 30, 40, 50]
-
-  //   //marging
-
-  //   let arr2 = [60,70,80,90,100]
-  //   let ans = [...arr,...arr2]
-  //   console.log(ans); // [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-
-  //   //destructuring
-
-  //   const [a,b,c,d,e,f] = arr;
-  //   console.log(d,a,b,c ); // 40 10 20 30
-
-
-    // ==================== Object ======================= //
-
-
-      // let obj = {id: 101, name : 'prince'}
-
-      // // copy object
-
-      // let obj1 = {...obj}
-
-      // console.log(obj1); // {id: 101, name: 'prince'}
-
-
-      // //marging  
-
-      // let obj2 = {id: 102,  place: 'surat'}
-
-      // let ans = {...obj,...obj2}
-      // console.log(ans); // {id: 102, name: 'prince', place: 'surat'}
-
-      // //destructuring
-
-      // let {id} = obj;
-
-      // console.log(id,obj.name); // 101 'prince'
-
-
-
-
-
-
+  let Totalprice = fdata.reduce((acc,v,i) => acc + v.price ,0);
+  console.log(Totalprice);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  <div>{
+    fdata.map((v,i) => {
+      return(
+        <div key={i}>
+          <h1>{v.name}</h1>
+          <h2>{v.price}</h2>
+          <h3>{v.id}</h3>
+        </div>
+        )
+    })
+    }</div>
   );
 }
 

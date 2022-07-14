@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-let Data = [
+  let Data = [
     {
       id: 101,
       name: 'Abacavir',
@@ -46,26 +46,28 @@ let Data = [
     }
   ];
 
-    
-  let fdata = Data.filter((v,i) => v.expiry >= 2022 && v.status === true);
+
+  let fdata = Data.filter((v, i) => v.expiry >= 2022 && v.status === true);
   console.log(fdata);
 
-  let Totalprice = fdata.reduce((acc,v,i) => acc + v.price ,0);
+  let Totalprice = fdata.reduce((acc, v, i) => acc + v.price, 0);
   console.log(Totalprice);
 
   return (
-
-  <div>{
-    fdata.map((v,i) => {
-      return(
-        <div key={i}>
-          <h1>{v.name}</h1>
-          <h2>{v.price}</h2>
-          <h3>{v.id}</h3>
-        </div>
-        )
-    })
-    }</div>
+    <div>
+      {
+        fdata.map((v, i) => {
+          return (
+            <div key={i}>
+              <h1>{v.name}</h1>
+              <h2>{v.price}</h2>
+              <h3>{v.id}</h3>
+            </div>
+          )
+        })
+      }
+        <h4>Totalprice :- {Totalprice}</h4>
+    </div>
   );
 }
 

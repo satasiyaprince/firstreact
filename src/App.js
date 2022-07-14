@@ -49,20 +49,18 @@ function App() {
     console.log(Totalsalary);
 
   return (
-    <div>
-      {
-        fdata.map((v,i) => {
-          return(
-            <div key={i}>
-               <h1>{v.name}</h1>
-               <h2>{v.salary}</h2>
-               <h3>{v.bonus}</h3>
-               <h4>{v.salary + v.bonus}</h4>
-            </div>
-          )
-        })
-      }
-    </div>
+  <div>{
+    fdata.map((v,i) => {
+      return(
+        <div key={i}>
+          <h1>{v.name}</h1>
+          <h2>{v.price}</h2>
+          <h3>{v.id}</h3>
+          <h4>{v.status.toString}</h4>
+        </div>
+        )
+    })
+    }</div>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import Course from './Function/Course';
+// import Fees from './Function/Fees';
 // import ClassBasedDemo from './Container/ClassBasedDemo/ClassBasedDemo';
 // import Country from './Container/ClassBasedDemo/Country';
 // import City from './Function/City';
-import Country from './Function/Country';
+// import Country from './Function/Country';
 
 function App(props) {
     return (
@@ -10,7 +12,9 @@ function App(props) {
             {/* <ClassBasedDemo />  */}
             {/* <Country /> */}
             {/* <City/> */}
-            <Country />
+            {/* <Country /> */}
+            <Course />
+            {/* <Fees /> */}
         </div>
     );
 }

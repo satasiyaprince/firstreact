@@ -1,10 +1,13 @@
 import React from 'react';
-import Course from './Function/Course';
-// import Fees from './Function/Fees';
+import Time from './Function/Time';
+// import Value from './Function/Value';
+// import Value2 from './Function/Value2';
 // import ClassBasedDemo from './Container/ClassBasedDemo/ClassBasedDemo';
 // import Country from './Container/ClassBasedDemo/Country';
 // import City from './Function/City';
 // import Country from './Function/Country';
+// import Course from './Function/Course';
+// import Fees from './Function/Fees';
 
 function App(props) {
     return (
@@ -13,8 +16,11 @@ function App(props) {
             {/* <Country /> */}
             {/* <City/> */}
             {/* <Country /> */}
-            <Course />
+            {/* <Course /> */}
             {/* <Fees /> */}
+            {/* <Value /> */}
+            {/* <Value2 /> */}
+            <Time />
         </div>
     );
 }

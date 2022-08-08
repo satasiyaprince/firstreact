@@ -29,6 +29,7 @@ class Time extends Component {
     }
 
     //5. Whenevar we move to another component then it is called. it resources. 
+    
     componentWillUnmount =() => {
         clearInterval(this.time);
     }

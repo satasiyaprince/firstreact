@@ -1,5 +1,4 @@
 import React from 'react';
-import Time from './Function/Time';
 // import Value from './Function/Value';
 // import Value2 from './Function/Value2';
 // import ClassBasedDemo from './Container/ClassBasedDemo/ClassBasedDemo';
@@ -8,6 +7,8 @@ import Time from './Function/Time';
 // import Country from './Function/Country';
 // import Course from './Function/Course';
 // import Fees from './Function/Fees';
+// import Time from './Function/Time';
+import TimeFun from './Function/TimeFun';
 
 function App(props) {
     return (
@@ -20,7 +21,8 @@ function App(props) {
             {/* <Fees /> */}
             {/* <Value /> */}
             {/* <Value2 /> */}
-            <Time />
+            {/* <Time /> */}
+            <TimeFun />
         </div>
     );
 }

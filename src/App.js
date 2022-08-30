@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Function/Counter';
 // import Value from './Function/Value';
 // import Value2 from './Function/Value2';
 // import ClassBasedDemo from './Container/ClassBasedDemo/ClassBasedDemo';
@@ -22,7 +23,8 @@ function App(props) {
             {/* <Value /> */}
             {/* <Value2 /> */}
             {/* <Time /> */}
-            <TimeFun />
+            {/* <TimeFun /> */}
+            <Counter />
         </div>
     );
 }
